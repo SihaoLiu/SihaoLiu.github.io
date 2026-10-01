@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-labelledby="title desc">
+<title id="title">AI Usage data flow</title><desc id="desc">Usage records from coding tools are normalized, synchronized across machines, and deduplicated to produce aggregate token statistics.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#617b8e"/></marker></defs>
+<rect width="720" height="400" fill="#fff"/>
+<g fill="none" stroke="#617b8e" stroke-width="2" marker-end="url(#arrow)"><path d="M182 90H222V195H261"/><path d="M182 195H261"/><path d="M182 300H222V195H261"/><path d="M448 195H514"/><path d="M362 137V96"/><path d="M380 95V137"/></g>
+<g fill="#edf3f7" stroke="#829eb1" stroke-width="1.5"><rect x="28" y="56" width="153" height="68" rx="3"/><rect x="28" y="161" width="153" height="68" rx="3"/><rect x="28" y="266" width="153" height="68" rx="3"/><rect x="270" y="146" width="177" height="99" rx="3"/><rect x="520" y="146" width="178" height="99" rx="3"/><rect x="290" y="36" width="160" height="58" rx="3"/></g>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#293e4d" font-size="20"><text x="104" y="86">Claude Code</text><text x="104" y="110" font-size="16">usage records</text><text x="104" y="191">Codex</text><text x="104" y="215" font-size="16">usage records</text><text x="104" y="296">Other tools</text><text x="104" y="320" font-size="16">usage records</text><text x="359" y="180">Normalize</text><text x="359" y="207">Deduplicate</text><text x="359" y="232" font-size="16">ai-usage</text><text x="609" y="181">Token counts</text><text x="609" y="209">Time series</text><text x="370" y="72" font-size="18">Cross-host sync</text></g>
+<text x="360" y="376" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#6a7882">Local records to aggregated statistics</text>
+</svg>

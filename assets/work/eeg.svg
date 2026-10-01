@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-labelledby="title desc">
+<title id="title">EEG and decision-making study</title><desc id="desc">Conceptual summary of the study, not a figure reproduced from the publication. EEG event-related potentials from an iterated ultimatum game are clustered and examined alongside personality and mood measures.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#60788b"/></marker></defs>
+<rect width="720" height="400" fill="#fff"/>
+<g fill="none" stroke="#60788b" stroke-width="2" marker-end="url(#arrow)"><path d="M182 111H263"/><path d="M455 111H528"/><path d="M604 147V271H462"/><path d="M256 288H294"/></g>
+<g fill="#edf3f7" stroke="#819bad" stroke-width="1.5"><rect x="25" y="72" width="157" height="78" rx="3"/><rect x="268" y="72" width="184" height="78" rx="3"/><rect x="534" y="72" width="161" height="78" rx="3"/><rect x="32" y="250" width="220" height="78" rx="3"/><rect x="303" y="250" width="158" height="78" rx="3"/></g>
+<g font-family="Arial,sans-serif" fill="#293e4d" text-anchor="middle" font-size="20"><text x="103" y="103">Ultimatum</text><text x="103" y="129">game</text><text x="360" y="103">EEG / ERP</text><text x="360" y="129">features</text><text x="614" y="103">Unsupervised</text><text x="614" y="129">clustering</text><text x="142" y="281">Personality and</text><text x="142" y="307">mood measures</text><text x="382" y="281">Trait</text><text x="382" y="307">associations</text></g>
+<path d="M275 190L300 190L310 171L325 211L340 153L353 222L368 176L380 190L445 190" stroke="#527faa" fill="none" stroke-width="2"/>
+<text x="360" y="376" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#6a7882">Method overview</text>
+</svg>

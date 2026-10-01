@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-labelledby="title desc">
+<title id="title">Ultrasonic monitoring of microwave ablation</title><desc id="desc">A conceptual overview based on the publication topic, not measured experimental data or a reproduced publication figure.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#607b8e"/></marker></defs>
+<rect width="720" height="400" fill="#fff"/>
+<g fill="#edf3f7" stroke="#819bad" stroke-width="1.5"><rect x="32" y="70" width="202" height="84" rx="3"/><rect x="32" y="242" width="202" height="84" rx="3"/><rect x="318" y="152" width="177" height="88" rx="3"/><rect x="562" y="152" width="132" height="88" rx="3"/></g>
+<g fill="none" stroke="#607b8e" stroke-width="2" marker-end="url(#arrow)"><path d="M132 160V235"/><path d="M239 284H274V196H311"/><path d="M501 196H555"/></g>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#293e4d" font-size="21"><text x="133" y="105">Microwave</text><text x="133" y="133">ablation</text><text x="133" y="277">Ultrasound</text><text x="133" y="305">acquisition</text><text x="406" y="188">Nakagami</text><text x="406" y="216">imaging</text><text x="628" y="188">Lesion</text><text x="628" y="216">monitoring</text></g>
+<text x="360" y="375" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#6a7882">Conceptual overview</text>
+</svg>
