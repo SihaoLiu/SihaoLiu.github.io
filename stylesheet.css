@@ -146,15 +146,15 @@ h2 { margin: 0 0 14px; font-size: 34px; line-height: 1.15; letter-spacing: -.028
 
 /* Publications */
 .kicker.group { margin: 40px 0 0; padding-bottom: 10px; border-bottom: 1px solid var(--divider); }
-.pub { display: grid; grid-template-columns: 168px minmax(0, 1fr); gap: 26px; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--divider); }
-#publications > .pub:last-child { border-bottom: 0; }
-.pub h4 { margin: 0 0 4px; font-size: 16px; line-height: 1.45; letter-spacing: -.01em; font-weight: 650; }
-.pub h4 a { color: var(--text-1); }
-.pub h4 a:hover { color: var(--link); }
-.pub-authors { margin: 0 0 6px; font-size: 14px; color: var(--text-2); }
-.pub-authors strong { color: var(--text-1); font-weight: 650; }
-.pub-meta { margin: 0; font: 12.5px var(--mono); color: var(--text-3); }
-.pub-meta em { font-style: normal; color: var(--link); }
+.paper { display: grid; grid-template-columns: 168px minmax(0, 1fr); gap: 26px; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--divider); }
+#publications > .paper:last-child { border-bottom: 0; }
+.paper h4 { margin: 0 0 4px; font-size: 16px; line-height: 1.45; letter-spacing: -.01em; font-weight: 650; }
+.paper h4 a { color: var(--text-1); }
+.paper h4 a:hover { color: var(--link); }
+.paper-authors { margin: 0 0 6px; font-size: 14px; color: var(--text-2); }
+.paper-authors strong { color: var(--text-1); font-weight: 650; }
+.paper-meta { margin: 0; font: 12.5px var(--mono); color: var(--text-3); }
+.paper-meta em { font-style: normal; color: var(--link); }
 
 /* Background */
 .background-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px 64px; margin-top: 24px; }
@@ -196,7 +196,7 @@ h2 { margin: 0 0 14px; font-size: 34px; line-height: 1.15; letter-spacing: -.028
   h1 { font-size: 38px; }
   .roles div, .news, .news li { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .project-list .project, .project-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
-  .pub { grid-template-columns: 110px minmax(0, 1fr); gap: 16px; align-items: start; }
+  .paper { grid-template-columns: 110px minmax(0, 1fr); gap: 16px; align-items: start; }
   .background-grid { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 420px) {
@@ -207,5 +207,5 @@ h2 { margin: 0 0 14px; font-size: 34px; line-height: 1.15; letter-spacing: -.028
 @media print {
   :root, :root[data-theme="light"] { --page: #fff; --sheet: #fff; --text-1: #000; --text-2: #222; --text-3: #444; --link: #000; --divider: #bbb; }
   .site-header, .usage-panel, .skip-link { display: none; }
-  .project, .pub, .entry { break-inside: avoid; }
+  .project, .paper, .entry { break-inside: avoid; }
 }
