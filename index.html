@@ -8,7 +8,7 @@
   <meta name="color-scheme" content="dark light">
   <link rel="canonical" href="https://sihao.me/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <script>try { document.documentElement.dataset.theme = localStorage.getItem("theme") === "light" ? "light" : "dark"; } catch {}</script>
+  <script>(() => { let saved = null; try { saved = localStorage.getItem("theme"); } catch {} document.documentElement.dataset.theme = saved === "light" || saved === "dark" ? saved : matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"; })();</script>
   <link rel="stylesheet" href="stylesheet.css">
   <script src="theme.js" defer></script>
   <script src="figures.js" defer></script>
