@@ -48,6 +48,9 @@ h1, h2, h3, h4 { color: var(--text-1); }
 .skip-link { position: absolute; left: 16px; top: -100px; z-index: 30; padding: 6px 10px; background: var(--page); }
 .skip-link:focus { top: 10px; }
 .kicker { margin: 0 0 6px; font: 700 12px/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--link); }
+/* Content for one theme only: the theme button's icon and the portrait, which shows the
+   original navy shirt on dark pages and the retouched light-shirt one on light pages. */
+:root[data-theme="light"] .dark-only, :root:not([data-theme="light"]) .light-only { display: none; }
 
 /* Navigation */
 .site-header { position: sticky; top: 0; z-index: 20; background: var(--page); border-bottom: 1px solid var(--divider); }
@@ -55,9 +58,10 @@ h1, h2, h3, h4 { color: var(--text-1); }
 .wordmark { font-size: 17px; font-weight: 700; letter-spacing: -.02em; color: var(--text-1); }
 .wordmark:hover { text-decoration: none; }
 .site-header nav { margin-left: auto; display: flex; gap: 24px; }
-.site-header nav a, #theme-toggle { font: 14px var(--mono); color: var(--text-1); }
+.site-header nav a { font: 14px var(--mono); color: var(--text-1); }
 .site-header nav a:hover { color: var(--link); text-decoration: none; }
-#theme-toggle { background: none; border: 1px solid var(--divider); border-radius: 2px; padding: 5px 10px; cursor: pointer; white-space: nowrap; }
+/* A zero line height leaves the button exactly the icon plus padding and border: 32px square. */
+#theme-toggle { padding: 6px; line-height: 0; color: var(--text-1); background: none; border: 1px solid var(--divider); border-radius: 2px; cursor: pointer; }
 #theme-toggle:hover { border-color: var(--link); color: var(--link); }
 
 main { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
@@ -80,8 +84,6 @@ h1 { margin: 6px 0 22px; font-size: 52px; line-height: 1.04; letter-spacing: -.0
 .portrait { grid-area: portrait; margin: 0; }
 .portrait-plate { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--sheet); border-radius: 2px; }
 .portrait-plate img { position: absolute; left: -8%; bottom: 0; width: 125%; max-width: none; height: auto; }
-/* The retouched light-shirt portrait on dark pages, the original navy one on light pages. */
-:root[data-theme="light"] .dark-only, :root:not([data-theme="light"]) .light-only { display: none; }
 .portrait figcaption { margin-top: 8px; font-size: 13px; color: var(--text-3); }
 
 /* News */
@@ -206,8 +208,8 @@ h2 { margin: 0 0 14px; font-size: 34px; line-height: 1.15; letter-spacing: -.028
 @media (max-width: 480px) {
   .wordmark { display: none; }
   .site-header nav { margin-left: 0; gap: 12px; }
-  .site-header nav a, #theme-toggle { font-size: 13px; }
-  #theme-toggle { margin-left: auto; padding: 4px 8px; }
+  .site-header nav a { font-size: 13px; }
+  #theme-toggle { margin-left: auto; }
 }
 @media (max-width: 420px) {
   .intro { grid-template-columns: minmax(0, 1fr) 96px; column-gap: 14px; }
@@ -215,8 +217,7 @@ h2 { margin: 0 0 14px; font-size: 34px; line-height: 1.15; letter-spacing: -.028
 }
 @media (max-width: 340px) {
   .site-header nav { gap: 9px; }
-  .site-header nav a, #theme-toggle { font-size: 12px; }
-  #theme-toggle { padding: 3px 6px; }
+  .site-header nav a { font-size: 12px; }
 }
 @media print {
   :root, :root[data-theme="light"] { --page: #fff; --sheet: #fff; --text-1: #000; --text-2: #222; --text-3: #444; --link: #000; --divider: #bbb; }
